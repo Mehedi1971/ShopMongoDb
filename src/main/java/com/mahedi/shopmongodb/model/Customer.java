@@ -12,9 +12,11 @@ import java.util.List;
 @AllArgsConstructor
 @NoArgsConstructor
 @Document(collection = "customer")
-public class Customer {
-    @Id
-    private long id;
+public class Customer extends BaseModel{
+//    @Id
+//    private long id;
     private String customerName;
+    private String email;
+    private String address;
     private List<Product>products;
 }
